@@ -1,7 +1,7 @@
-# Staking Program smart contract
+# DCN Staking Program smart contract
 
 ## Purpose
-The Staking Program smart contract is a place where multiple holders of particular ERC20 token are earning passive income based on the amount of tokens that they have been staking. The smart contract has no time restrictions which means that the token holders are allowed to stake, unstake or claim their current rewards at any time.
+DCN Staking Program smart contract is a place where multiple holders of Dentacoin (DCN) ERC20 token are earning passive income based on the amount of tokens that they have been staking. The smart contract has no time restrictions which means that the token holders are allowed to stake, unstake or claim their current rewards at any time. 
 
 ## Public methods
 * Method `stake` - this method accepts one parameter `_tokens_amount` which is basically the amount of tokens that the `msg.sender` is willing to stake.
