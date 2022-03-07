@@ -10,7 +10,7 @@ contract Ownable {
 
     modifier onlyOwner() {
         if (msg.sender == owner)
-            _;
+            _; 
     }
 
     function transferOwnership(address newOwner) public onlyOwner {
