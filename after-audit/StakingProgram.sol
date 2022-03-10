@@ -10,7 +10,7 @@ contract Ownable {
 
     modifier onlyOwner() {
         if (msg.sender == owner)
-            _; 
+            _;
     }
 
     function transferOwnership(address newOwner) public onlyOwner {
@@ -105,10 +105,10 @@ contract StakingProgram is Ownable, SafeMath {
     }
 
     // ==================================== EVENTS ====================================
-    event staked(address staker, uint256 tokens, uint256 fee);
-    event unstaked(address staker, uint256 tokens, uint256 fee);
-    event payout(uint256 round, uint256 tokens, address sender);
-    event claimedReward(address staker, uint256 reward);
+    event staked(address indexed staker, uint256 tokens, uint256 fee);
+    event unstaked(address indexed staker, uint256 tokens, uint256 fee);
+    event payout(uint256 round, uint256 tokens, address indexed sender);
+    event claimedReward(address indexed staker, uint256 reward);
     // ==================================== /EVENTS ====================================
 
     // ==================================== MODIFIERS ====================================
